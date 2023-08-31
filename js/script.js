@@ -34,6 +34,24 @@ createApp({
     };
   },
 
+  methods: {
+    goPrev(){
+
+      if(this.activeSlide > 0 ) this.activeSlide--;
+      else this.activeSlide = this.slides.lenght - 1;
+    },
+
+
+    goNext(){
+
+      if(this.activeSlide < this.slides.lenght -1) this.activeSlide++;
+      else this.activeSlide  0 ;
+    },
+
+
+    goTo(index){},
+  }
+
   created() {
     // console.log(this.slides);
   },
