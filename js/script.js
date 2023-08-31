@@ -37,5 +37,13 @@ createApp({
     };
   },
 
-  methods: {},
+  methods: {
+    goNext() {
+      if (this.activeImg < this.slides.length - 1) {
+        this.activeImg++;
+      } else {
+        this.activeImg = 0;
+      }
+    },
+  },
 }).mount("#app");
