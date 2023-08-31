@@ -39,9 +39,22 @@
   position: relative;
 }
 
+.thumb-index {
+  position: absolute;
+  width: 25px;
+  line-height: 25px;
+  text-align: center;
+  top: 5px;
+  right: 5px;
+  background-color: #000;
+  color: #ccc;
+  border-radius: 50%;
+}
+
 .thumb {
   height: calc((300px) / 5);
   opacity: 0.5;
+  position: relative;
 }
 
 .thumb img {

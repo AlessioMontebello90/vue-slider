@@ -23,8 +23,12 @@
           <div class="thumbs">
             <div class="prev"></div>
             <div class="next"></div>
-            <div class="thumb active" v-for="thumb in slides">
-              {{index}}
+            <div
+              class="thumb"
+              v-for="(thumb, index) in slides"
+              :class="(index == activeSlide) ? 'active' :''"
+            >
+              <span class="thumb-index">{{index}}</span>
               <img :src="thumb.image" alt="Svezia" />
             </div>
             <!-- <div class="thumb">
