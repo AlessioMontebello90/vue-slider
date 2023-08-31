@@ -45,6 +45,8 @@ createApp({
       else this.activeSlide = 0;
     },
 
-    goTo(index) {},
+    goTo(index) {
+      this.activeSlide = index;
+    },
   },
 }).mount("#app");
